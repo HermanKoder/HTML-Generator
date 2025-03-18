@@ -8,12 +8,29 @@
 </head>
 <body>
 
-    <div id="container">
-        <h1>Endre fargen på teksten!</h1>
+    <div class="container">
+        <h1>Endre tekst fargen</h1>
         <h2 id="tekst">Denne teksten skal endre farge :)</h2>
-        <input type="text" id="farge" placeholder="Skriv inn en Englesk Farge">
-        <button id="endreFarge" onclick="klikkeFunksjon(e)">Endre Farge</button>
+        <input type="text" id="farge" placeholder="Skriv inn en Engelsk Farge">
+        <button id="endreFargeTekst">Endre Farge</button>
     </div>
+
+    <div class="container">
+        <h1>Endre bakgrunnsfarge</h1>
+        <div class="colorChoice">
+            <input type="radio" id="redBG" name="fargeBG" value="red">
+            <label for="redBG">Rød</label>
+        </div>
+        <div class="colorChoice">
+            <input type="radio" id="blueBG" name="fargeBG" value="blue">
+            <label for="blueBG">Blå</label>
+        </div>
+        <div class="colorChoice">
+            <input type="radio" id="greenBG" name="fargeBG" value="green">
+            <label for="greenBG">Grønn</label>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
