@@ -20,3 +20,4 @@ radioButtons.forEach(function (radio) {
         document.body.style.backgroundColor = radio.value;
     });
 });
+
