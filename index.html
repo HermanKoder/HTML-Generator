@@ -7,15 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+ <div class="menu-icon" onclick="toggleMenu()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+<div class="customSite">
+
+</div>
+
+<div class="sidebar">
     <div class="container">
-        <h1>Endre tekst fargen</h1>
-        <h2 id="tekst">Denne teksten skal endre farge :)</h2>
+        <h1>1. Endre tekst fargen</h1>
+        <h2 id="tekst">Tekst preview :)</h2>
         <input type="text" id="farge" placeholder="Skriv inn en Engelsk Farge">
+        <br>
         <button id="endreFargeTekst">Endre Farge</button>
     </div>
 
     <div class="container">
-        <h1>Endre bakgrunnsfarge</h1>
+        <h1>2. Endre bakgrunnsfarge</h1>
         <div class="colorChoice">
             <input type="radio" id="redBG" name="fargeBG" value="red">
             <label for="redBG">Rød</label>
@@ -35,10 +48,20 @@
     </div>
 
     <div class="container">
-        <h1></h1>
-
+        <h1>3. Endre Element</h1>
+        <label for="elementInput">Her skal det stå tekst!</label>
+        <br>
+        <input id="elementInput" type="text">
+        <br>
+        <select name="element" id="elementType">
+            <option value="h1">H1(Overskrift)</option>
+            <option value="h2">H2(Underskrift)</option>
+            <option value="p">P(paragraftekst)</option>
+        </select>
+        <br>
+        <button id="endreElementTekst">Endre Element</button>
     </div>
-    
+</div>
     <script src="script.js"></script>
 </body>
 </html>
